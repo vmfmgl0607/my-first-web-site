@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title class="re">WEB1 - JAVASCRIPT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .js {
+            font-weight: bold;
+            color: red;
+            font-size: 20px;
+        }
+        #first {
+            color: green;
+        }
+        span {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="night_day" type="button" value="night" onclick="
+        if (document.querySelector('#night_day').value ==='night') {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#night_day').value ='day'
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value ='night'
+
+        }
+    ">
+
+    <h1><a href="index.html">WEB1 - JAVASCRIPT</a></h1>
+
+
+    <div id="grid">
+
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JAVASCRIPT</a></li>
+        </ol>
+
+        <div id="article">
+            <h2 style="background-color: coral; color: powderblue">JAVASCRIPT란 무엇인가?</h2>
+
+            <img src="coding.jpg" width="60%">
+
+            <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/text-level-semantics.html#the-a-element"
+                target="_blank" title="HTML5 specification"><span id="first" class="js">ipsum dolor sit amet,</span></a> consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.<span class="js">Ut enim ad minim veniam,</span> quis nostrud exercitation ullamco laboris nisi ut <span>aliquip</span>  ex ea commodoconsequat.
+                <span class="js">Duis aute irure dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu <span>fugiat</span> nulla pariatur.
+                 <span>Excepteursint</span>occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p style="margin-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
