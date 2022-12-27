@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <input id="night_day" type="button" value="night" onclick="
+    <!-- <input id="night_day" type="button" value="night" onclick="
         if (document.querySelector('#night_day').value ==='night') {
             document.querySelector('body').style.backgroundColor = 'black';
             document.querySelector('body').style.color = 'white';
@@ -32,6 +32,34 @@
             document.querySelector('#night_day').value ='night'
 
         }
+    "> -->
+
+    <input type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if (this.value ==='night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                this.value = 'day';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'powderblue';
+                    i = i + 1
+                }
+
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                this.value ='night'
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'blue';
+                    i = i + 1
+                }       
+            }
     ">
 
     <h1><a href="index.html">WEB1 - JAVASCRIPT</a></h1>
@@ -67,6 +95,20 @@
             </p>
         </div>
     </div>
+
+        <input type="button" value="night" onclick="
+                var target = document.querySelector('body')
+                if (this.value ==='night') {
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    this.value = 'day';
+                } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    this.value ='night'
+        
+                }
+        ">
 </body>
 
 </html>
